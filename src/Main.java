@@ -75,7 +75,7 @@ public class Main {
     public static void task6(){
        int carriageCapacity = 102;
        int seatPlaceAll = 60;
-       int peopleInTheCarriage = 102;
+       int peopleInTheCarriage = 59;
        int freeSeatPlace;
        int freeStandingPlaces;
 
@@ -83,15 +83,12 @@ public class Main {
            freeSeatPlace = seatPlaceAll - peopleInTheCarriage;
            freeStandingPlaces =  carriageCapacity - (freeSeatPlace + peopleInTheCarriage);
            System.out.println("В вагоне осталось " + freeSeatPlace + " сидячих мест, и " + freeStandingPlaces + " стоячих мест" );
-       }else if (peopleInTheCarriage > seatPlaceAll && peopleInTheCarriage <= 102){
+       }else if (peopleInTheCarriage > seatPlaceAll && peopleInTheCarriage <= carriageCapacity){
            freeStandingPlaces = carriageCapacity - peopleInTheCarriage;
            System.out.println("В вагоне осталось  0 сидячих мест и " + freeStandingPlaces + " стоячих мест" );
        }else {
            System.out.println("Вагон заполнен");
        }
-
-
-
     }
     public static void task7(){
         int one = 23;
